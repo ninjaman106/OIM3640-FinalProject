@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Recommender</title>
+</head>
+<body>
+    <h1>Personalized News Recommender</h1>
+
+    <form method="POST">
+        <label>Enter your interests (comma-separated):</label><br><br>
+        <input type="text" name="interests" size="50" placeholder="technology, sports, finance">
+        <br><br>
+        <button type="submit">Get News</button>
+    </form>
+
+    <hr>
+
+    {% if recommendations %}
+        <h2>Recommended Articles</h2>
+        {% for article, score in recommendations %}
+            <p>
+                <strong>{{ article.title }}</strong><br>
+                Score: {{ score }}<br>
+                <a href="{{ article.url }}" target="_blank">Read Article</a>
+            </p>
+        {% endfor %}
+    {% endif %}
+</body>
+</html>
+
+
