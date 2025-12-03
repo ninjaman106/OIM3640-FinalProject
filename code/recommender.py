@@ -19,3 +19,9 @@ def recommend(articles, interests):
 
     scored.sort(key=lambda x: x[1], reverse=True)
     return scored[:5]
+
+
+"file analyzes each news article and compares it to the user’s "
+"stated interests. It uses simple keyword matching to assign a relevance "
+"score to each article based on how many times user interests appear in the article’s "
+"title or description."

@@ -17,3 +17,10 @@ def index():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+"This file initializes the Flask web server and defines the main route for the application. "
+"When a user submits their interests through the form, the app retrieves news articles "
+"from the news API and passes them to the recommendation engine. The results are then "
+"displayed back to the user on the webpage. This file acts as the central hub that coordinates "
+"data flow between the user interface"

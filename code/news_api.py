@@ -18,3 +18,6 @@ def get_articles():
 
     return data.get("articles", [])
  
+
+"This file connects to the NewsAPI service using an API key "
+"stored securely in an environment variable"
